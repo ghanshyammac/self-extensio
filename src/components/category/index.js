@@ -28,7 +28,7 @@ const useStyles = makeStyles(() => ({
 const tableRow = {
     alignItems: 'center',
   }
-  
+
   const dropdownList = {
     height: '250px',
     overflow: 'auto',
@@ -43,6 +43,11 @@ const Category = function Category(cmsconfig) {
 
   const [filterdata, setFilterdata] = useState([]);
   const [selectedvalue, setValue] = useState(null);
+
+  const resize = () => {
+    extensionField.window.updateHeight();
+  };
+
   const handleChange = async (e) => {
     let newList = [];
 
@@ -63,6 +68,7 @@ const Category = function Category(cmsconfig) {
     console.log('newList', newList);
     // Set the filtered state based on what our rules added to newList
     setFilterdata(newList);
+    resize();
   };
 
   const getFieldValue = () => extensionField.field.getData();
