@@ -28,7 +28,7 @@ export default withRedux(initStore)(
           </Head>
           <CssBaseline />
           <Layout>
-            {/* <h1>Welcome to extension plugins</h1> */}
+            <h1>Welcome to extension plugins</h1>
             <Component {...pageProps} />
           </Layout>
         </Provider>

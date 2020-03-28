@@ -36,7 +36,7 @@ const Index = function Index() {
 
   return (
     <div>
-      {/* <h1>Extension</h1> */}
+      <h1>Extension</h1>
       {
         (cms.fieldconfig && cms.fieldconfig.type === 'product')
         && <Product cms={cms} />
