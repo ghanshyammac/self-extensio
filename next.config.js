@@ -1,8 +1,8 @@
-require('dotenv-safe').config();
+// require('dotenv-safe').config();
 
 module.exports = {
   compress: false,
   publicRuntimeConfig: {
-    API_BASE_URL: process.env.API_BASE_URL,
+    API_BASE_URL: 'https://cs-ext-demo.cloudthis.com/api/'
   },
 };
