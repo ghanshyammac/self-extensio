@@ -20,7 +20,7 @@ const Index = function Index() {
   });
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== 'undefined' && window.ContentstackUIExtension !== 'undefined') {
       console.log('idhar aaya', window.ContentstackUIExtension);
 
       // connect to ContentStack
